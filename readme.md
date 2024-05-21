@@ -71,6 +71,78 @@
   - `createdAt`: Oluşturulma tarihi
   - `updatedAt`: Güncellenme tarihi
 
+# Market Mate STOCK MANAGEMENT API
+
+### Market Mate is a comprehensive application that allows users to purchase products, make sales, and facilitate inventory management.
+
+
+### Tables and Descriptions
+
+- **users**: Contains user information.
+  - `id`: User ID
+  - `username`: Username
+  - `password`: Password
+  - `email`: Email
+  - `firstName`: First Name
+  - `lastName`: Last Name
+  - `isActive`: Active Status
+  - `isStaff`: Whether the user is a staff member
+  - `isAdmin`: Whether the user is an admin
+  - `createdAt`: Creation Date
+  - `updatedAt`: Update Date
+
+- **sales**: Records details of sales transactions.
+  - `id`: Sale ID
+  - `userId`: User ID
+  - `brandId`: Brand ID
+  - `productId`: Product ID
+  - `quantity`: Quantity
+  - `price`: Price
+  - `priceTotal`: Total Price
+  - `createdAt`: Creation Date
+
+- **categories**: Lists product categories.
+  - `id`: Category ID
+  - `name`: Category Name
+  - `createdAt`: Creation Date
+  - `updatedAt`: Update Date
+
+- **products**: Contains product details.
+  - `id`: Product ID
+  - `categoryId`: Category ID
+  - `brandId`: Brand ID
+  - `name`: Product Name
+  - `quantity`: Quantity
+  - `createdAt`: Creation Date
+  - `updatedAt`: Update Date
+
+- **brands**: Contains information about different product brands.
+  - `id`: Brand ID
+  - `name`: Brand Name
+  - `image`: Image
+  - `createdAt`: Creation Date
+  - `updatedAt`: Update Date
+
+- **firms**: Contains details about firms associated with purchases.
+  - `id`: Firm ID
+  - `name`: Firm Name
+  - `phone`: Phone Number
+  - `address`: Address
+  - `image`: Image
+  - `createdAt`: Creation Date
+  - `updatedAt`: Update Date
+
+- **purchases**: Records details of purchase transactions.
+  - `id`: Purchase ID
+  - `userId`: User ID
+  - `firmId`: Firm ID
+  - `brandId`: Brand ID
+  - `productId`: Product ID
+  - `quantity`: Quantity
+  - `price`: Price
+  - `priceTotal`: Total Price
+  - `createdAt`: Creation Date
+  - `updatedAt`: Update Date
 
 ### ERD:
 
