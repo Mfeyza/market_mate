@@ -2,6 +2,7 @@
 
 const express = require('express')
 const app = express()
+const cors = require('cors');
 
 
 
@@ -16,6 +17,7 @@ require('express-async-errors')
 
 const { dbConnection } = require('./src/configs/dbConnection')
 dbConnection()
+app.use(cors())
 
 
 app.use(express.json())
