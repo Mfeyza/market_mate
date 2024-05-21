@@ -1,5 +1,7 @@
 #Market mate STOCK MANAGEMENT API
 
+### Market Mate, kullanıcıların ürünleri satın almasına, satış yapmasına ve envanter yönetimini kolaylaştırmasına olanak tanıyan kapsamlı bir uygulamadır.
+
 
 ### Tablolar ve Açıklamaları
 
